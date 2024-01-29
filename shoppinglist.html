@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="./shoppinglist.css" />
+    <script
+      src="https://kit.fontawesome.com/b669fcd44b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="list">
+      <header class="header">Shopping List</header>
+      <ul class="items">
+        <li class="item_row">
+          <div class="item">
+            <div>
+              <input type="checkbox" id="item_name" />
+              <label for="item_name">Egg</label>
+            </div>
+            <button class="item_delete">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <footer class="footer">
+        <input type="text" class="footer_input" />
+        <button class="footer_button">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </footer>
+    </section>
+  </body>
+</html>
