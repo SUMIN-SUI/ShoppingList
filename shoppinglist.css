@@ -58,11 +58,15 @@ button {
   letter-spacing: 0.03rem;
   padding: 7px 7px 7px 14px;
   border-radius: 10px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   background-color: rgba(255, 254, 241, 0.95);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-/* 클릭되면 background color change -> rgba(110, 110, 115, 0.1) */
+
+.item.checked {
+  color: #fff;
+  background-color: rgba(110, 110, 115, 0.5);
+}
 
 .item_delete .fa-xmark {
   font-size: 14px;
@@ -70,7 +74,7 @@ button {
 }
 
 .item_delete .fa-xmark:hover {
-  color: #565656;
+  color: lightsalmon;
   transform: scale(1.2);
 }
 
