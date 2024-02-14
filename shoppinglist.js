@@ -43,3 +43,8 @@ function deleteList(list) {
 }
 
 footerInput.addEventListener("keydown", list);
+
+function addList() {
+  createItemRow(footerInput.value);
+  footerInput.value = "";
+}
