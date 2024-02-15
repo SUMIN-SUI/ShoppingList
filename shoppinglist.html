@@ -19,19 +19,7 @@
   <body>
     <section class="list">
       <header class="header">Shopping List</header>
-      <ul class="items">
-        <li class="item_row">
-          <div class="item">
-            <div>
-              <input type="checkbox" id="item_name" onclick="checkList(this)" />
-              <label for="item_name">Egg</label>
-            </div>
-            <button class="item_delete" onclick="deleteList(this)">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-        </li>
-      </ul>
+      <ul class="items"></ul>
       <footer class="footer">
         <input type="text" class="footer_input" />
         <button class="footer_button" onclick="addList()">
@@ -39,6 +27,7 @@
         </button>
       </footer>
     </section>
+
     <script src="./shoppinglist.js"></script>
   </body>
 </html>

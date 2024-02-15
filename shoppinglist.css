@@ -5,6 +5,7 @@
 
 body {
   font-family: "Gowun Batang", serif;
+  background-color: #5c89c5;
 }
 
 ul {
@@ -28,15 +29,16 @@ button {
   width: 500px;
   height: 600px;
   padding: 4px 25px;
-  background-color: rgba(110, 110, 115, 0.3);
+  background-color: #c5985c;
   border-radius: 14px;
   margin: auto;
   margin-top: 30px;
 }
 
 .header {
-  font-size: 32px;
-  font-weight: 800;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 900;
   letter-spacing: 0.03rem;
   padding: 10px 0;
   text-align: center;

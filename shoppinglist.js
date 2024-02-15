@@ -20,6 +20,9 @@ function createItemRow(item) {
 
 function list(event) {
   if (event.keyCode == 13) {
+    if (!event.target.value) {
+      return;
+    }
     createItemRow(event.target.value);
     event.target.value = "";
   }
@@ -45,6 +48,10 @@ function deleteList(list) {
 footerInput.addEventListener("keydown", list);
 
 function addList() {
+  if (!footerInput.value) {
+    footerInput.focus();
+    return;
+  }
   createItemRow(footerInput.value);
   footerInput.value = "";
 }
