@@ -16,6 +16,9 @@ function createItemRow(item) {
   </div>
   `;
   items.appendChild(itemRow);
+  itemRow.scrollIntoView({ block: "center" });
+  footerInput.value = "";
+  footerInput.focus();
 }
 
 function list(event) {
@@ -24,7 +27,6 @@ function list(event) {
       return;
     }
     createItemRow(event.target.value);
-    event.target.value = "";
   }
 }
 
@@ -48,10 +50,9 @@ function deleteList(list) {
 footerInput.addEventListener("keydown", list);
 
 function addList() {
-  if (!footerInput.value) {
+  if (footerInput.value === "") {
     footerInput.focus();
     return;
   }
   createItemRow(footerInput.value);
-  footerInput.value = "";
 }
